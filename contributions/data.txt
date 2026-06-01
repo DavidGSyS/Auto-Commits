@@ -3,3 +3,4 @@
 # ─────────────────────────────────────────────
 2026-06-01T21:41:54 | docs: add inline code comments
 2026-06-01T09:52:40 | build: update dependencies
+2026-06-01T13:20:46 | feat: add new utility function
