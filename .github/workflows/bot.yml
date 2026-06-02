@@ -1,0 +1,54 @@
+name: 🤖 Auto-Commits Bot
+
+on:
+  schedule:
+    # Runs every day at midnight UTC
+    - cron: '0 0 * * *'
+  
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+    inputs:
+      days_back:
+        description: 'Number of days back to generate commits'
+        required: false
+        default: '1'
+      max_commits:
+        description: 'Maximum commits per day'
+        required: false
+        default: '10'
+
+permissions:
+  contents: write
+
+jobs:
+  auto-commit:
+    name: Generate Contributions
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: ⚙️ Configure Git
+        run: |
+          git config user.name "Auto-Commits Bot"
+          git config user.email "bot@autocommits.dev"
+      
+      - name: 🤖 Run Auto-Commits Bot
+        run: |
+          python scripts/bot.py \
+            --days ${{ github.event.inputs.days_back || '1' }} \
+            --max-commits ${{ github.event.inputs.max_commits || '10' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 📊 Show Git Log
+        run: git log --oneline -20

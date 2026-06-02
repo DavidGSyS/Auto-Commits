@@ -1,0 +1,11 @@
+{
+  "max_commits_per_day": 10,
+  "min_commits_per_day": 0,
+  "days_back": 365,
+  "branch": "main",
+  "commit_hour_start": 9,
+  "commit_hour_end": 23,
+  "skip_weekends_probability": 0.3,
+  "git_username": "Auto-Commits Bot",
+  "git_email": "bot@autocommits.dev"
+}
