@@ -23,3 +23,4 @@
 2026-06-02T10:54:20 | test: add unit tests for core module
 2026-06-02T10:20:44 | build: update dependencies
 2026-06-02T10:26:18 | style: apply consistent formatting
+2026-06-02T16:12:27 | ci: improve pipeline configuration
