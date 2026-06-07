@@ -73,3 +73,4 @@
 2026-06-07T19:39:07 | fix: correct calculation logic
 2026-06-07T11:37:50 | fix: correct calculation logic
 2026-06-07T16:35:12 | refactor: improve code structure and readability
+2026-06-07T18:09:54 | docs: add inline code comments
