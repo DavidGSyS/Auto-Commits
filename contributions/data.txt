@@ -107,3 +107,4 @@
 2026-06-11T21:30:17 | docs: update documentation
 2026-06-11T18:00:17 | test: improve test coverage
 2026-06-11T23:57:32 | chore: clean up unused imports
+2026-06-11T18:24:16 | fix: correct calculation logic
