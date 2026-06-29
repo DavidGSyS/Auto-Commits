@@ -226,3 +226,4 @@
 2026-06-29T19:52:39 | docs: update documentation
 2026-06-29T16:43:03 | test: add unit tests for core module
 2026-06-29T23:06:32 | docs: update documentation
+2026-06-29T11:04:31 | docs: add inline code comments
