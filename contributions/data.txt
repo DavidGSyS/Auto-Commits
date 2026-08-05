@@ -511,3 +511,4 @@
 2026-08-04T17:36:58 | style: apply consistent formatting
 2026-08-04T10:24:16 | docs: update documentation
 2026-08-05T18:49:41 | build: update dependencies
+2026-08-05T17:31:48 | chore: clean up unused imports
