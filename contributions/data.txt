@@ -590,3 +590,4 @@
 2026-08-17T10:47:40 | docs: update documentation
 2026-08-17T22:38:14 | fix: correct calculation logic
 2026-08-18T20:03:29 | test: add unit tests for core module
+2026-08-18T11:44:08 | style: apply consistent formatting
